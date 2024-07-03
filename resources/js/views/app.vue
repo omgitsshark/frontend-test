@@ -1,18 +1,20 @@
 <template>
-    <div>
-        {{message}}
-    </div>
+    <CommentPage />
 </template>
 <script>
-const default_layout = "default";
-
+import CommentPage from "./components/comments/CommentPage.vue";
 
 export default {
-    computed: {},
-    data() {
-        return {
-            message:'Hello World'
-        }
-    }
+    components: {
+        CommentPage,
+    },
 };
 </script>
+
+<style>
+#app {
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+</style>

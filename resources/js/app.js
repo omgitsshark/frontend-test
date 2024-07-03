@@ -1,10 +1,12 @@
-import Vue from 'vue'
+import Vue from "vue";
+import App from "./views/app.vue";
+import init from "./bootstrap";
+import { store } from "./store";
 
-//Main pages
-import App from './views/app.vue'
+init();
 
-
-const app = new Vue({
-    el: '#app',
-    components: { App }
+new Vue({
+    el: "#app",
+    components: { App },
+    store,
 });
